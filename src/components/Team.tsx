@@ -6,25 +6,7 @@ const teamMembers = [
     role: '扫货',
     description: '最扫之人,不容置疑',
     image: 'https://thumbnails.roblox.com/v1/users/avatar?userIds=3902382749&size=720x720&format=Png&isCircular=false',
-  },
-  {
-    name: '管理员',
-    role: '脚本管理',
-    description: '负责脚本审核与社区管理',
-    image: 'https://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&userId=2',
-  },
-  {
-    name: '技术支持',
-    role: '技术支持',
-    description: '协助用户解决技术问题',
-    image: 'https://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&userId=3',
-  },
-  {
-    name: '美工',
-    role: 'UI 设计',
-    description: '负责网站界面设计与美化',
-    image: 'https://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&userId=4',
-  },
+  }
 ];
 
 export default function Team() {
