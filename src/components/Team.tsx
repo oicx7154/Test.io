@@ -5,7 +5,7 @@ const teamMembers = [
     name: 'KS',
     role: '扫货',
     description: '最扫之人,不容置疑',
-    image: 'https://thumbnails.roblox.com/v1/users/avatar?userIds=3902382749&size=720x720&format=Png&isCircular=false',
+    image: 'https://tr.rbxcdn.com/30DAY-Avatar-1DA53ECB829E4E0FD721FA33058CB29A-Png/720/720/Avatar/Webp/noFilter',
   }
 ];
 
