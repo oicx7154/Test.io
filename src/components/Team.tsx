@@ -2,10 +2,10 @@ import { motion } from 'framer-motion';
 
 const teamMembers = [
   {
-    name: '创始人',
-    role: '创始人 & 开发者',
-    description: 'RS Hub 创始人,负责整体开发与运营',
-    image: 'https://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&userId=1',
+    name: 'KS',
+    role: '扫货',
+    description: '最扫之人,不容置疑',
+    image: 'https://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&userId=3902382749',
   },
   {
     name: '管理员',
