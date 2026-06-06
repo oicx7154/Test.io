@@ -5,7 +5,7 @@ const teamMembers = [
     name: 'KS',
     role: '扫货',
     description: '最扫之人,不容置疑',
-    image: 'https://thumbnails.roblox.com/v1/users/avatar?userIds=${3902382749}&size=720x720&format=Png&isCircular=false',
+    image: 'https://thumbnails.roblox.com/v1/users/avatar?userIds=3902382749&size=720x720&format=Png&isCircular=false',
   },
   {
     name: '管理员',
@@ -24,27 +24,6 @@ const teamMembers = [
     role: 'UI 设计',
     description: '负责网站界面设计与美化',
     image: 'https://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&userId=4',
-  },
-];
-
-const scriptAuthors = [
-  {
-    name: '脚本作者 A',
-    role: '高级脚本师',
-    description: '擅长开发各类游戏脚本',
-    image: 'https://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&userId=5',
-  },
-  {
-    name: '脚本作者 B',
-    role: '脚本开发者',
-    description: '专注于热门游戏脚本制作',
-    image: 'https://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&userId=6',
-  },
-  {
-    name: '脚本作者 C',
-    role: '脚本贡献者',
-    description: '社区活跃脚本创作者',
-    image: 'https://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&userId=7',
   },
 ];
 
