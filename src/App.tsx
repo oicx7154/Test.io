@@ -9,17 +9,17 @@ import Scripts from './components/Scripts';
 import GetKey from './components/GetKey';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
-import Team from './components/Team';
+import Rank from './components/Team';
 import CookieConsent from './components/CookieConsent';
 
-type Page = 'home' | 'version' | 'games' | 'scripts' | 'getkey' | 'team';
+type Page = 'home' | 'version' | 'games' | 'scripts' | 'getkey' | 'rank';
 
 const hashToPage: Record<string, Page> = {
   '#/version': 'version',
   '#/games': 'games',
   '#/scripts': 'scripts',
   '#/getkey': 'getkey',
-  '#/team': 'team',
+  '#/rank': 'rank',
 };
 
 const pageToHash: Record<Page, string> = {
@@ -28,7 +28,7 @@ const pageToHash: Record<Page, string> = {
   games: '#/games',
   scripts: '#/scripts',
   getkey: '#/getkey',
-  team: '#/team',
+  rank: '#/rank',
 };    
 
 function getPageFromHash(): Page {
@@ -87,9 +87,9 @@ export default function App() {
         </SubPage>
       )}
 
-      {page === 'team' && (
+      {page === 'rank' && (
         <SubPage navigate={navigate}>
-          <Team />
+          <Rank />
         </SubPage>
       )}
 
