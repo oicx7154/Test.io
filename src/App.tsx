@@ -19,6 +19,7 @@ const hashToPage: Record<string, Page> = {
   '#/games': 'games',
   '#/scripts': 'scripts',
   '#/getkey': 'getkey',
+  '#/team': 'team',
 };
 
 const pageToHash: Record<Page, string> = {
@@ -27,8 +28,8 @@ const pageToHash: Record<Page, string> = {
   games: '#/games',
   scripts: '#/scripts',
   getkey: '#/getkey',
-  team: '#/team', 
-};
+  team: '#/team',
+};    
 
 function getPageFromHash(): Page {
   return hashToPage[window.location.hash] || 'home';
@@ -56,7 +57,6 @@ export default function App() {
       {page === 'home' && (
         <>
           <Hero navigate={navigate} />
-          <Team />
           <Announcements />
           <Features />
           <FAQ />
