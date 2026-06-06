@@ -47,8 +47,6 @@ const scriptAuthors = [
     image: 'https://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&userId=7',
   },
 ];
-
-
 export default function Team() {
   return (
     <section id="team" className="relative py-28 bg-grid">
@@ -100,5 +98,7 @@ export default function Team() {
         </div>
       </div>
     </section>
+  );
+}
   );
 }
