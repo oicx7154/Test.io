@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 import Team from './components/Team';
 import CookieConsent from './components/CookieConsent';
 
-type Page = 'home' | 'version' | 'games' | 'scripts' | 'getkey';
+type Page = 'home' | 'version' | 'games' | 'scripts' | 'getkey' | 'team';
 
 const hashToPage: Record<string, Page> = {
   '#/version': 'version',
@@ -27,6 +27,7 @@ const pageToHash: Record<Page, string> = {
   games: '#/games',
   scripts: '#/scripts',
   getkey: '#/getkey',
+  team: '#/team', 
 };
 
 function getPageFromHash(): Page {
@@ -83,6 +84,12 @@ export default function App() {
       {page === 'getkey' && (
         <SubPage navigate={navigate}>
           <GetKey />
+        </SubPage>
+      )}
+
+      {page === 'team' && (
+        <SubPage navigate={navigate}>
+          <Team />
         </SubPage>
       )}
 
