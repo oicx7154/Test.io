@@ -4,8 +4,14 @@ const teamMembers = [
   {
     name: 'KS',
     role: '小男娘',
-    description: '最骚之人,不容置疑',
+    description: '最扫之人,不容置疑',
     image: 'https://tr.rbxcdn.com/30DAY-Avatar-1DA53ECB829E4E0FD721FA33058CB29A-Png/720/720/Avatar/Webp/noFilter',
+  },
+  {
+    name: 'Ye_Pon',
+    role: '扫货',
+    description: '最强乐乐之人,名言: 我喜茶你',
+    image: 'https://tr.rbxcdn.com/30DAY-Avatar-517B4E7630C57B3BD46E079634FE401A-Png/720/720/Avatar/Webp/noFilter',
   }
 ];
 
