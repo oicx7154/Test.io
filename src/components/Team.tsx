@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 
-const coreTeam = [
+const teamMembers = [
   {
     name: 'KS',
     role: '扫货',
     description: '最扫之人,不容置疑',
-    image: 'https://thumbnails.roblox.com/v1/users/avatar?userIds=${3902382749}&size=720x720&format=Png&isCircular=false',
+    image: 'https://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&userId=3902382749',
   },
   {
     name: '管理员',
@@ -47,6 +47,7 @@ const scriptAuthors = [
     image: 'https://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&userId=7',
   },
 ];
+
 export default function Team() {
   return (
     <section id="team" className="relative py-28 bg-grid">
