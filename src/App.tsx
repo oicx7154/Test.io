@@ -55,8 +55,8 @@ export default function App() {
       {page === 'home' && (
         <>
           <Hero navigate={navigate} />
-          <Announcements />
           <Team />
+          <Announcements />
           <Features />
           <FAQ />
         </>
