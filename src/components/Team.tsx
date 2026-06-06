@@ -36,14 +36,11 @@ export default function Team() {
               className="rounded-2xl glow-card p-6 text-center group hover:scale-105 transition-transform duration-300"
             >
               <div className="relative mb-5 inline-block">
-                <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-indigo-500/30 group-hover:border-indigo-400/60 transition-colors mx-auto">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="absolute inset-0 rounded-full bg-gradient-to-t from-indigo-500/20 to-transparent pointer-events-none" />
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-auto max-w-xs mx-auto"
+                />
               </div>
 
               <h3 className="text-lg font-bold text-white mb-1">{member.name}</h3>
