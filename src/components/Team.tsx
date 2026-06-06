@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 const teamMembers = [
   {
     name: 'KS',
-    role: '扫货',
-    description: '最扫之人,不容置疑',
+    role: '小男娘',
+    description: '最骚之人,不容置疑',
     image: 'https://tr.rbxcdn.com/30DAY-Avatar-1DA53ECB829E4E0FD721FA33058CB29A-Png/720/720/Avatar/Webp/noFilter',
   }
 ];
@@ -44,7 +44,7 @@ export default function Team() {
               </div>
 
               <h3 className="text-lg font-bold text-white mb-1">{member.name}</h3>
-              <p className="text-sm text-indigo-400 font-medium mb-3">{member.role}</p>
+              <p className="text-sm text-gradient font-bold mb-3 px-4 py-1 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-full border border-indigo-500/20 inline-block shadow-lg shadow-indigo-500/10">{member.role}</p>
               <p className="text-slate-400 text-sm leading-relaxed">{member.description}</p>
             </motion.div>
           ))}
