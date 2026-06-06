@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-type Page = 'home' | 'version' | 'games' | 'scripts' | 'getkey' | 'team';
+type Page = 'home' | 'version' | 'games' | 'scripts' | 'getkey' | 'rank';
 
 import SSImage from './icon.png';
 
@@ -10,7 +10,7 @@ const sectionLinks = [
   { label: '功能', href: '#features', page: null as Page | null },
   { label: '游戏', href: '#/games', page: 'games' as Page },
   { label: '脚本', href: '#/scripts', page: 'scripts' as Page },
-  { label: '排行榜', href: '#/team', page: 'team' as Page },
+  { label: '排行榜', href: '#/rank', page: 'rank' as Page },
   { label: '获取卡密', href: '#/getkey', page: 'getkey' as Page },
   { label: '版本', href: '#/version', page: 'version' as Page },
   { label: '常见问题', href: '#faq', page: null as Page | null },
