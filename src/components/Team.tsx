@@ -70,7 +70,7 @@ export default function Team() {
           <p className="text-slate-400 text-lg">赛季积分榜 - 最强玩家榜单</p>
         </motion.div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {rankingData.map((member, index) => (
             <motion.div
               key={member.name}
@@ -78,36 +78,36 @@ export default function Team() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`rounded-xl p-3 text-center group hover:scale-105 transition-all duration-300 border backdrop-blur-xl ${getRankBg(member.rank)}`}
+              className={`rounded-xl p-4 text-center group hover:scale-105 transition-all duration-300 border backdrop-blur-xl ${getRankBg(member.rank)}`}
             >
-              <div className="relative mb-2">
-                <div className="absolute -top-1 -right-1 z-10">
+              <div className="relative mb-3">
+                <div className="absolute -top-2 -right-2 z-10">
                   {getRankIcon(member.rank)}
                 </div>
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-auto max-w-[100px] mx-auto rounded-lg shadow-lg"
+                  className="w-full h-auto max-w-[140px] mx-auto rounded-lg shadow-xl"
                 />
               </div>
 
-              <h3 className="text-sm font-bold text-white mb-1">{member.name}</h3>
+              <h3 className="text-base font-bold text-white mb-2">{member.name}</h3>
 
-              <p className="text-xs text-gradient font-bold mb-2 px-2 py-0.5 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-full border border-indigo-500/20 inline-block">
+              <p className="text-xs text-gradient font-bold mb-2 px-3 py-1 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-full border border-indigo-500/20 inline-block">
                 {member.title}
               </p>
 
-              <div className="flex flex-wrap justify-center gap-1 mb-2">
+              <div className="flex flex-wrap justify-center gap-1.5 mb-3">
                 {member.badges.map((badge) => (
-                  <span key={badge} className="text-xs px-2 py-0.5 bg-white/5 rounded-full text-slate-400 border border-white/10">
+                  <span key={badge} className="text-xs px-2.5 py-0.5 bg-white/5 rounded-full text-slate-300 border border-white/10">
                     {badge}
                   </span>
                 ))}
               </div>
 
-              <div className="flex items-center justify-center gap-1 text-slate-400 text-xs">
-                <Zap className="w-3 h-3 text-yellow-400" />
-                <span className="text-yellow-400 font-bold">{member.score.toLocaleString()}</span>
+              <div className="flex items-center justify-center gap-1.5 text-slate-400 text-sm">
+                <Zap className="w-4 h-4 text-yellow-400" />
+                <span>积分: <span className="text-yellow-400 font-bold">{member.score.toLocaleString()}</span></span>
               </div>
             </motion.div>
           ))}
